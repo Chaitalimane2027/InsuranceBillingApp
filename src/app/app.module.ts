@@ -22,6 +22,7 @@ import { ViewInvoiceComponent } from './view-invoice/view-invoice.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { LoginComponent } from './login/login.component';
     HomeDetailsComponent,
     FooterbarComponent,
     NavBarComponent,
+    RegisterComponent,
     PolicyDetailsComponent,
     ViewInvoiceComponent,
     LoginComponent

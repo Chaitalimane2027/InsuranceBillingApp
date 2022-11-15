@@ -2,6 +2,7 @@ import { Component } from '@angular/core'
 import { LoginComponent } from '../login/login.component'
 import { MatDialog } from  '@angular/material/dialog';
 import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { RegisterComponent } from '../register/register.component';
 
 
 @Component({
@@ -46,8 +47,19 @@ import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
     margin-left: 80px;
     text-decoration: none;
     font-size:larger;
-     
- }`]
+}
+
+#nav-link:hover {
+    color: orange;
+    cursor: pointer;
+  }
+ #nav-link{
+  margin-left: 10px;
+  text-decoration: none;
+  color: blue;
+ } 
+
+`]
 
 })
 
@@ -56,6 +68,15 @@ export class NavBarComponent {
   openModal() {
     
     const modalRef = this.modalService.open(LoginComponent);
+    modalRef.result.then((result) => {
+      console.log(result);
+      
+    }).catch((error) => {
+      console.log(error);
+    });
+  }
+  openNewModal(){
+    const modalRef = this.modalService.open(RegisterComponent);
     modalRef.result.then((result) => {
       console.log(result);
       
