@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeDetailsComponent } from './home/home.component';
 import { NavBarComponent } from './nav/navbar.component';
 import { FooterbarComponent } from './footer/footer.component';
-
+import { NgbModalModule } from '../../node_modules/@ng-bootstrap/ng-bootstrap';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -37,6 +36,7 @@ import { RegisterComponent } from './register/register.component';
     MatRadioModule,
     MatFormFieldModule,
     NgbModule,
+    NgbModalModule,
     FormsModule,
     MatInputModule,
     ReactiveFormsModule,
